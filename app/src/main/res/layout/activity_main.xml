@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.sharedpreftest2.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/enter_message" />
+
+  
+
+    <EditText
+        android:id="@+id/edit_message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/enter_message"
+        android:inputType="textMultiLine" />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/adjust_text_size"
+        />
+   <SeekBar
+       android:id="@+id/seekbar_font_size"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="16dp"
+       android:layout_marginEnd="16dp"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:background="#ffffff"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_blue"
+            android:onClick="changeFontColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/blue"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_red"
+            android:onClick="changeFontColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/red"/>
+
+        <RadioButton
+            android:id="@+id/rb_green"
+            android:onClick="changeFontColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/green"/>
+
+        <RadioButton
+            android:id="@+id/rb_orange"
+            android:onClick="changeFontColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/orange"/>
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_clear_settings"
+            android:text="@string/clear_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_save_settings"
+            android:layout_alignParentEnd="true"
+            android:text="@string/save_settings"/>
+    </RelativeLayout>
+    
+    
+</LinearLayout>

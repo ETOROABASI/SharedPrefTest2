@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SharedPrefTest2</string>
+    <string name="enter_message">Enter Your Text Here</string>
+    <string name="adjust_text_size">Drag to Adjust Font Size</string>
+    <string name="font_color">Choose a Font Color</string>
+    <string name="save_settings">Save Settings</string>
+    <string name="clear_settings">Clear Settings</string>
+    <string name="blue">Blue</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="orange">Orange</string>
+</resources>
